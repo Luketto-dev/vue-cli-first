@@ -1,17 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <PageTitle></PageTitle>
+    
+    <BgHero></BgHero>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageTitle from './components/PageTitle.vue'
+import BgHero from './components/BgHero.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    
+  },
+  components:{
+    PageTitle,
+    BgHero,
   }
 }
 </script>
@@ -24,5 +33,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body{
+  margin: 0;
 }
 </style>
